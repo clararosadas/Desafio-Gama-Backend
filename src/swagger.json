@@ -1,0 +1,117 @@
+{
+  "openapi": "3.0.0",
+    
+  "info": {
+    "title": "API do JobsNET",
+    "description": "API do desafio Gama Academy - Banco de Currículos JobsNET",
+    "version": "1.0.0"
+  },
+    
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "Ambiente de desenvolvimento"
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro do currículo",
+        "description": "Rota de cadastro do currículo",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "datanascimento": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "estadocivil": {
+                    "type": "string"
+                  },
+                  "genero": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "number"
+                  },
+                  "endereco": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "complemento": {
+                    "type": "string"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "uf": {
+                    "type": "string"
+                  },
+                  "celular": {
+                    "type": "number"
+                  },
+                  "alternativo": {
+                    "type": "number"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "number"
+                  },
+                  "veiculo": {
+                    "type": "string"
+                  },
+                  "habilitacao": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "eu": {
+                  "value": {
+                    "nome": "Clara Rosadas",
+                    "datanascimento": "13/06/1989",
+                    "cargo": "dev",
+                    "estadocivil": "solteira",
+                    "genero": "feminino",
+                    "cep": "20510052",
+                    "endereco": "Rua Uruguai",
+                    "numero": "380",
+                    "complemento": "612",
+                    "bairro": "tijuca",
+                    "cidade": "Rio de Janeiro",
+                    "uf": "RJ",
+                    "celular": "(21)999999999",
+                    "alternativo": "(21)22222222",
+                    "email": "clararosadas@gmail.com",
+                    "id": "235443793",
+                    "cpf": "11431674737",
+                    "veiculo": "sim",
+                    "habilitacao": "sim"
+                  }
+                }
+              }
+            }  
+          }
+        }
+      }
+    }
+  }  
+}  
