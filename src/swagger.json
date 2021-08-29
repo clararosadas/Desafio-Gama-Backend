@@ -14,7 +14,7 @@
     },
     {
       "url": "https://jobsnetback.herokuapp.com/",
-      "description": "ambiente de produção"
+      "description": "Ambiente de produção"
   }
   ],
   "paths": {
