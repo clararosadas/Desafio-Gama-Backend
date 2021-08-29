@@ -11,7 +11,11 @@
     {
       "url": "http://localhost:5000",
       "description": "Ambiente de desenvolvimento"
-    }
+    },
+    {
+      "url": "https://jobsnetback.herokuapp.com/",
+      "description": "ambiente de produção"
+  }
   ],
   "paths": {
     "/register": {
